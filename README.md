@@ -7,6 +7,8 @@ $ pip install eve
 # Development version of Eve
 $ git clone http://github.com/pyeve/eve.git
 Initialized empty Git repository in ~/dev/eve/.git/
+To activate Eve:
+$ . venv/bin/activate
 
 $ cd eve
 $ virtualenv venv
