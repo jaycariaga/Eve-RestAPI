@@ -22,4 +22,5 @@ Finished processing dependencies for Eve
 # Run GET
 In one terminal, type: "python run.py".
 In another terminal, type: "curl -i http://localhost:5000/". 
+  Within that terminal, an output should contain a JSON of the resources mentioned in settings.py
 
