@@ -1,10 +1,10 @@
-"""for settings.py...
-has API endpoints w/ no custom option and validation rules
+#for settings.py...
+#has API endpoints w/ no custom option and validation rules
 
-DOMAIN = {
+"""DOMAIN = {
 	'people': {}
-	'books': {}
 } """
+
 
 import os
 
@@ -26,7 +26,7 @@ RESOURCE_METHODS = ['GET', 'POST', 'DELETE']
 
 # Enable reads (GET), edits (PATCH) and deletes of individual items
 # (defaults to read-only item access).
-ITEM_METHODS = ['GET', 'PATCH', 'DELETE']
+ITEM_METHODS = ['GET', 'PATCH', 'PUT', 'DELETE']
 
 # We enable standard client cache directives for all resources exposed by the
 # API. We can always override these global settings later.
@@ -44,6 +44,7 @@ people = {
     # '/people/<ObjectId>/'. We leave it untouched, and we also enable an
     # additional read-only entry point. This way consumers can also perform GET
     # requests at '/people/<lastname>/'.
+    # requests for a certain person is found in '/people/<lastname>/'
     'additional_lookup': {
         'url': 'regex("[\w]+")',
         'field': 'lastname'
@@ -124,3 +125,4 @@ DOMAIN = {
     'people': people,
     'works': works,
 }
+
