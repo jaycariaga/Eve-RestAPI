@@ -7,6 +7,12 @@ so far client.py works but currently trying to get mongodb to work properly to g
 # Begin by setting up Eve
 $ pip install eve
 
+# Set up MongoDB (via linux)
+follow instructions on 'https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/'.
+<br> Next step is to start it. <br> Use: $ sudo service mongod start 
+<br> Then $ mongo
+
+
 # Development version of Eve
 $ git clone http://github.com/pyeve/eve.git
 Initialized empty Git repository in ~/dev/eve/.git/
