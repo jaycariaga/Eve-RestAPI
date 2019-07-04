@@ -33,3 +33,7 @@ In one terminal, type: "python run.py".
 In another terminal, type: "curl -i http://localhost:5000/". 
   Within that terminal, an output should contain a JSON of the resources mentioned in settings.py
 
+# Info on client.py
+Client.py is a seperate file that contains code that works with another server.  This code manages to
+HTTP delete the original resources and POST a new set of resources. In the meantime, this server also allows the user to use
+curl to GET the resources as well.
