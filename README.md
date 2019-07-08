@@ -36,6 +36,5 @@ In another terminal, type: "curl -i http://localhost:5000/".
 <br>To create a specific list of the schema details of a resource, do "curl -i http://localhost:5000/resource"
 
 # Info on client.py
-Client.py is a seperate file that contains code that works with another server.  This code manages to
-HTTP delete the original resources and POST a new set of resources. In the meantime, this server also allows the user to use
-curl to GET the resources as well.
+Client.py is a seperate file that contains code that works with another server that is NOT a localhost.  This code manages to
+use Eve and utilize API's like DELETE for ridding of the original resources and POST to create a new object of that specific resources. In the meantime, this server also allows the user to use curl commands on another linux terminal to GET the resources as well.
