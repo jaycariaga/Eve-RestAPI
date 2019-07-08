@@ -11,8 +11,8 @@ $ pip install eve
 
 # Set up MongoDB (via linux)
 follow instructions on 'https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/'.
-<br> Next step is to start it. <br> Use: $ sudo service mongod start 
-<br> Then $ mongodb --dbpath ~/path/to/.../data/db    
+<br> //Next step is to start it. <br> Use: $ sudo service mongod start 
+<br> $ mongodb --dbpath ~/path/to/.../data/db    
 
 # Development version of Eve
 $ git clone http://github.com/pyeve/eve.git
