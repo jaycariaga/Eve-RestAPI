@@ -1,5 +1,6 @@
 # Eve-RestAPI
 contains code that is supposed to run REST API commands POST, GET, PUT, and DELETE
+<br>Main site that helped the most: https://docs.python-eve.org/en/stable/quickstart.html
 
 # Current State
 so far client.py works but currently trying to get mongodb to work properly to get the localhost to run. 
