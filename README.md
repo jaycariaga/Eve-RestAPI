@@ -1,7 +1,7 @@
 # Eve-RestAPI
 contains code that is supposed to run REST API commands POST, GET, PUT, and DELETE
 <br>Main site that helped the most: https://docs.python-eve.org/en/stable/quickstart.html
-<br>The most important part of this is to make sure three terminals run: <b>for mongod, for python run.py, and the last to complete API commands (POST, GET, DELETE, PATCH ...) <b>
+<br>The most important part of this is to make sure three terminals run: <b>for mongod, for python run.py, and the last to complete API commands (POST, GET, DELETE, PATCH ...) </b>
 
 # References to Possible Questions
 1) So far client.py works but currently trying to get mongodb to work properly to get the localhost to run. 
@@ -13,12 +13,12 @@ Mongodb has been solved in a way that an instance running to a data/db folder
 
 
 # Begin by setting up Eve
-$ pip install eve
+<b>$ pip install eve</b>
 
 # Set up MongoDB (via linux)
 follow instructions on 'https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/'.
 <br> //Next step is to start it. <br> Use: $ sudo service mongod start 
-<br> $ mongodb --dbpath ~/path/to/.../data/db    
+<br> <b>$ mongodb --dbpath ~/path/to/.../data/db    </b>
 
 # Installing Development version of Eve
 $ git clone http://github.com/pyeve/eve.git
@@ -36,14 +36,14 @@ Finished processing dependencies for Eve
 
 # Run GET
 Make sure an INSTANCE of mongod (for linux) is running in one terminal.
-<br>In another terminal, type: "python run.py". This records successes/failures of accessing API's.
+<br>In another terminal, type: <b>"python run.py"</b>. This records successes/failures of accessing API's.
 <br>In another terminal, type: "curl -i http://localhost:5000/", or "curl -i http://127.0.0.1:5000/".
 <br>Within that terminal, an output should contain a JSON of the list of resources mentioned in settings.py
-<br>To create a specific list of the objects' schema details, do "curl -i http://localhost:5000/resource"
+<br><b>To create a specific list of the objects' schema details, do "curl -i http://localhost:5000/resource"</b>
 
 # Run POST
 EXAMPLE:
-<br>$ curl -d '[{"firstname": "barack", "lastname": "obama"}, {"firstname": "mitt", "lastname": "romney"}]' -H 'Content-Type: application/json'  http://127.0.0.1:5000/people
+<br><b>$ curl -d '[{"firstname": "barack", "lastname": "obama"}, {"firstname": "mitt", "lastname": "romney"}]' -H 'Content-Type: application/json'  http://127.0.0.1:5000/people </b>
 <br>URL needs to include the resource that we POST to, hence ".../people"
 
 
