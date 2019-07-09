@@ -1,12 +1,17 @@
 # Eve-RestAPI
 contains code that is supposed to run REST API commands POST, GET, PUT, and DELETE
 <br>Main site that helped the most: https://docs.python-eve.org/en/stable/quickstart.html
+<br>The most important part of this is to make sure three terminals run: <b>for mongod, for python run.py, and the last to complete API commands (POST, GET, DELETE, PATCH ...) <b>
 
-# Current State
-so far client.py works but currently trying to get mongodb to work properly to get the localhost to run. 
+# References to Possible Questions
+1) So far client.py works but currently trying to get mongodb to work properly to get the localhost to run. 
 <br>Problem: once running a GET command on the localhost to return a JSON on a resource, an "Internal Server Error occurs".
 Mongodb has been solved in a way that an instance running to a data/db folder
-<br>
+<br>SOLUTION: Fix the authentication in Settings.py by removing the lines involving usernames and passwords and setting authentication on the dbname.
+2) If the mongod --dbpath ~/path/.../ command does not work: create a data/db/ within ur target path and rerun.
+3) For API commands besides GET, it is better to use "http://127.0.0.1:5000/" for the url.
+
+
 # Begin by setting up Eve
 $ pip install eve
 
