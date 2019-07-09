@@ -52,7 +52,8 @@ Utilize an application called "POSTMAN"
 link: https://www.getpostman.com/downloads/
 
 # Alternative 2
-Utilize a python script with code based off of client.py to perform DELETE, POST, and GET
+Utilize a python script with code based off of client.py to perform DELETE, POST, and GET.
+<br>This script is: modify.py
 
 # Info on client.py
 Client.py is a seperate file that contains code that works with another server that is NOT a localhost.  This code manages to
