@@ -41,6 +41,12 @@ Make sure an INSTANCE of mongod (for linux) is running in one terminal.
 <br>Within that terminal, an output should contain a JSON of the list of resources mentioned in settings.py
 <br>To create a specific list of the objects' schema details, do "curl -i http://localhost:5000/resource"
 
+# Run POST
+EXAMPLE:
+<br>$ curl -d '[{"firstname": "barack", "lastname": "obama"}, {"firstname": "mitt", "lastname": "romney"}]' -H 'Content-Type: application/json'  http://127.0.0.1:5000/people
+<br>URL needs to include the resource that we POST to, hence ".../people"
+
+
 # Info on client.py
 Client.py is a seperate file that contains code that works with another server that is NOT a localhost.  This code manages to
 use Eve and utilize API's like DELETE for ridding of the original resources and POST to create a new object of that specific resources. In the meantime, this server also allows the user to use curl commands on another linux terminal to GET the resources as well.
