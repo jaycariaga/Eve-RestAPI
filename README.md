@@ -51,6 +51,9 @@ Utilize an application called "POSTMAN"
 <br><br>
 link: https://www.getpostman.com/downloads/
 
+# Alternative 2
+Utilize a python script with code based off of client.py to perform DELETE, POST, and GET
+
 # Info on client.py
 Client.py is a seperate file that contains code that works with another server that is NOT a localhost.  This code manages to
 use Eve and utilize API's like DELETE for ridding of the original resources and POST to create a new object of that specific resources. In the meantime, this server also allows the user to use curl commands on another linux terminal to GET the resources as well.
