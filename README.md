@@ -15,26 +15,26 @@ follow instructions on 'https://docs.mongodb.com/manual/tutorial/install-mongodb
 <br> //Next step is to start it. <br> Use: $ sudo service mongod start 
 <br> $ mongodb --dbpath ~/path/to/.../data/db    
 
-# Development version of Eve
+# Installing Development version of Eve
 $ git clone http://github.com/pyeve/eve.git
 Initialized empty Git repository in ~/dev/eve/.git/
-To activate Eve:
-$ . venv/bin/activate
-
-$ cd eve
-$ virtualenv venv
-New python executable in venv/bin/python
-
-$ . venv/bin/activate
-$ python setup.py install
-...
+<br>To activate Eve:
+<br>$ . venv/bin/activate
+<br>$ cd eve
+<br>$ virtualenv venv
+<br>New python executable in venv/bin/python
+<br>$ . venv/bin/activate
+<br>$ python setup.py install
+<br>...
 Finished processing dependencies for Eve
 
+
 # Run GET
-In one terminal, type: "python run.py".
-In another terminal, type: "curl -i http://localhost:5000/". 
-<br>Within that terminal, an output should contain a JSON of the resources mentioned in settings.py
-<br>To create a specific list of the schema details of a resource, do "curl -i http://localhost:5000/resource"
+Make sure an INSTANCE of mongod (for linux) is running in one terminal.
+<br>In another terminal, type: "python run.py". This records successes/failures of accessing API's.
+<br>In another terminal, type: "curl -i http://localhost:5000/", or "curl -i http://127.0.0.1:5000/".
+<br>Within that terminal, an output should contain a JSON of the list of resources mentioned in settings.py
+<br>To create a specific list of the objects' schema details, do "curl -i http://localhost:5000/resource"
 
 # Info on client.py
 Client.py is a seperate file that contains code that works with another server that is NOT a localhost.  This code manages to
