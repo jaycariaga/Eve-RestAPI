@@ -46,6 +46,10 @@ EXAMPLE:
 <br><b>$ curl -d '[{"firstname": "barack", "lastname": "obama"}, {"firstname": "mitt", "lastname": "romney"}]' -H 'Content-Type: application/json'  http://127.0.0.1:5000/people </b>
 <br>URL needs to include the resource that we POST to, hence ".../people"
 
+# Alternative for using linux command line
+Utilize an application called "POSTMAN"
+<br><br>
+link: https://www.getpostman.com/downloads/
 
 # Info on client.py
 Client.py is a seperate file that contains code that works with another server that is NOT a localhost.  This code manages to
