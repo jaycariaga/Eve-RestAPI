@@ -49,6 +49,12 @@ EXAMPLE:
 # Run DELETE
 Linux example:
 <br>$ curl -i -X DELETE http://127.0.0.1:5000/resource/<_id> -H "If-Match: <_etag_>"
+<br> "If-Match..." covers the data integrity area 
+
+# Run PATCH (updates a certain schema of an item)
+Linux example:
+<br>$ curl -H "If-Match: <etag_> " -H "Content-Type:
+application/json" -X PATCH -i http://eve-demo.herokuapp.com/people/50adfa4038345b1049c88a37 -d '{"schema": "newval"}'
 
 
 # Alternative for using linux command line
