@@ -18,7 +18,7 @@ Mongodb has been solved in a way that an instance running to a data/db folder
 # Set up MongoDB (via linux)
 follow instructions on 'https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/'.
 <br> //Next step is to start it. <br> Use: $ sudo service mongod start 
-<br> <b>$ mongodb --dbpath ~/path/to/.../data/db    </b>
+<br> <b>$ mongod --dbpath ~/path/to/.../data/db    </b>
 
 # Installing Development version of Eve
 $ git clone http://github.com/pyeve/eve.git
