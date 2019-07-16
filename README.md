@@ -73,7 +73,7 @@ The code inside can handle:
 <br><b>DELETE's of specific items AND whole resources if needed; 
 <br>POST's onto the resources
 <br>GET's of whole resources AND of specified items of a resource
-<br>currently needs PATCH/PUT implementation functions
+<br>currently needs PATCH/PUT implementation functions </b>
 
 
 # Info on client.py
