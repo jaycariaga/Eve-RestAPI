@@ -10,7 +10,8 @@ ENTRY_POINT = '127.0.0.1:5000'
 
 def post_people():
     people = [
-        {
+	#examples of adding an object(s) to a resource       
+	{
             'firstname': 'John',
             'lastname': 'Doe',
             'role': ['author'],
@@ -80,7 +81,7 @@ def perform_post(resource, data):
     headers = {'Content-Type': 'application/json'}
     return requests.post(endpoint(resource), data, headers=headers)
 
-
+#below function essentially WIPES OUT all items from the collection
 def delete():
     r = perform_delete('people')
     print "'people' deleted", r.status_code
@@ -96,8 +97,29 @@ def endpoint(resource):
     return 'http://%s/%s/' % (
         ENTRY_POINT if not sys.argv[1:] else sys.argv[1], resource)
 
+#works
+def delitem(resource, ident, etag): 
+    url_ = "%s%s/" % (endpoint(resource), ident)
+    print url_ 
+    return requests.delete(url_, headers = {"IF-MATCH": etag}) #can use global configs in headers
+
+#works and returns whole endpoint
+def get_people(resource):
+    print '%s' % (requests.get(endpoint(resource)).json()) #we need .json() for formatting
+
+#works when we use .json()
+def get_person(resource, ident):
+    print '%s' % ((requests.get(endpoint(resource)+ident)).json())
+
+	
+
 
 if __name__ == '__main__':
-    delete()
-    ids = post_people()
-    post_works(ids)
+    delitem('people','5d2e37d85d1da9dedaae26aa', '7a5a701ee5a0acba6bf27ca1a3094ee6effdca6d')
+    #get_people('people')
+    #get_person('people', 'Doe') #can use either lastname 'Doe' or the id of that item
+
+    #from previous known code
+    #delete()
+    #ids = post_people()
+    #post_works(ids)
