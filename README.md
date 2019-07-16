@@ -3,13 +3,15 @@ contains code that is supposed to run REST API commands POST, GET, PUT, and DELE
 <br>Main site that helped the most: https://docs.python-eve.org/en/stable/quickstart.html
 <br>The most important part of this is to make sure three terminals run: <b>for mongod, for python run.py, and the last to complete API commands (POST, GET, DELETE, PATCH ...) </b>
 
-# References to Possible Questions
+# Answers/References to Possible Questions
 1) So far client.py works but currently trying to get mongodb to work properly to get the localhost to run. 
 <br>Problem: once running a GET command on the localhost to return a JSON on a resource, an "Internal Server Error occurs".
 Mongodb has been solved in a way that an instance running to a data/db folder
 <br>SOLUTION: Fix the authentication in Settings.py by removing the lines involving usernames and passwords and setting authentication on the dbname.
 2) If the mongod --dbpath ~/path/.../ command does not work: create a data/db/ within ur target path and rerun.
 3) For API commands besides GET, it is better to use "http://127.0.0.1:5000/" for the url.
+4) On modify.py, GET functions require a print of the url, applied with ".json()"
+5) On modify.py, DELETE functions need a header to pass data validation by applying a header to check etag match.
 
 
 # Begin by setting up Eve
@@ -65,6 +67,14 @@ link: https://www.getpostman.com/downloads/
 # Alternative 2
 Utilize a python script with code based off of client.py to perform DELETE, POST, and GET.
 <br>This script is: modify.py
+
+# What to know about modify.py
+The code inside can handle:
+<br><b>DELETE's of specific items AND whole resources if needed; 
+<br>POST's onto the resources
+<br>GET's of whole resources AND of specified items of a resource
+<br>currently needs PATCH/PUT implementation functions
+
 
 # Info on client.py
 Client.py is a seperate file that contains code that works with another server that is NOT a localhost.  This code manages to
