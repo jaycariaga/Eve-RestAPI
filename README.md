@@ -19,7 +19,7 @@ Mongodb has been solved in a way that an instance running to a data/db folder
 
 # Set up MongoDB (via linux)
 follow instructions on 'https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/'.
-<br> //Next step is to start it. <br> Use: $ sudo service mongod start 
+<br> //Next step is to start it.  
 <br> <b>$ mongod --dbpath ~/path/to/.../data/db    </b>
 
 # Installing Development version of Eve
@@ -64,9 +64,11 @@ Utilize an application called "POSTMAN"
 <br><br>
 link: https://www.getpostman.com/downloads/
 
-# Alternative 2
+# Alternative 2: Running a python script
 Utilize a python script with code based off of client.py to perform DELETE, POST, and GET.
 <br>This script is: modify.py
+<br><b>IMPORTANT, while running python script, make sure this is run on a THIRD terminal (1st: for the mongod instance; 
+2nd: for having the server run with "python run.py"</b>
 
 # What to know about modify.py
 The code inside can handle:
