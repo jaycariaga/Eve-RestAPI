@@ -1,5 +1,5 @@
 # Eve-RestAPI
-contains code that is supposed to run REST API commands POST, GET, PUT, and DELETE
+contains code via "modify.py" that runs REST API commands POST, GET, PUT, and DELETE on structures listed by settings.py
 <br>Main site that helped the most: https://docs.python-eve.org/en/stable/quickstart.html
 <br>The most important part of this is to make sure three terminals run: <b>for mongod, for python run.py, and the last to complete API commands (POST, GET, DELETE, PATCH ...) </b>
 
