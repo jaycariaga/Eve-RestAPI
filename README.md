@@ -20,6 +20,7 @@ Mongodb has been solved in a way that an instance running to a data/db folder
 # Set up MongoDB (via linux)
 follow instructions on 'https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/'.
 <br> //Next step is to start it.  
+<br>Make sure that an empty data/db/ file is available for storage when calling this next statement:
 <br> <b>$ mongod --dbpath ~/path/to/.../data/db    </b>
 
 # Installing Development version of Eve
